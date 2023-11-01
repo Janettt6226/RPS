@@ -80,15 +80,14 @@ function playRound(playerSelection) {
 
   buttons.forEach(button =>{
     button.addEventListener('click', function(){
-      // playerSelection = this.value;
       playRound(this.value);
     })
   })
 
   function disableButtons() {
     buttons.forEach(elem => {
-        elem.disabled = !true
-        playerScore = 0
-        computerScore = 0
+        elem.disabled = !true;
+        playerScore = 0;
+        computerScore = 0;
     })
 }
