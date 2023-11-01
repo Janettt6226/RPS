@@ -87,6 +87,8 @@ function playRound(playerSelection) {
 
   function disableButtons() {
     buttons.forEach(elem => {
-        elem.disabled = true
+        elem.disabled = !true
+        playerScore = 0
+        computerScore = 0
     })
 }
